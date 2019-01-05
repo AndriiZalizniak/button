@@ -6,19 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        button{
-            width: 60px;
+        .button{
+            display: flex;
+            width: 160px;
             height: 60px;
             border-radius: 12px;
-            background-color: red;
-        }
-        button:hover{
-            background-color: #000;
-            color: red;
+            background-color: #ff0000;
+            text-decoration: none;
+            color: #fff;
+            font: bold 20px Arial, sans-serif;
+            justify-content: center;
+            align-items: center;
+        } 
+              
+        .button:hover{
+            transition: all 1s cubic-bezier(0, 0, 0, 1);
+            background-color: #cc0000;
+            
         }
     </style>
 </head>
 <body>
-        <button type="button">Start</button>
+    <a class="button" href="#">Start</a>  
 </body>
 </html>
